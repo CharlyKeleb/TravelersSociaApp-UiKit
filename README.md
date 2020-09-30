@@ -4,7 +4,7 @@ Flutter representation of the Traveler's Social App  found on dribbble.
 Star⭐ the repo if you like what you see😉.
 
 
-Images are from [dribbble](https://dribbble.com/akashdivya)
+Images are from [dribbble](https://dribbble.com/shots/11674733-Travellore-App-UI-UX-Modern-Minimal)
 
 
 ## ✨ Requirements
