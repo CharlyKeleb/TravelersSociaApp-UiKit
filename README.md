@@ -25,7 +25,7 @@ Images are from [dribbble](https://dribbble.com/akashdivya/Travellore)
 
 
 ## 🤓 Author(s)
-**Charly Keleb Charles042** [![Twitter Follow](https://img.shields.io/twitter/follow/iamjideguru.svg?style=social)](https://twitter.com/Charlykeleb)
+**Charly Keleb Charles042** [![Twitter Follow](https://img.shields.io/twitter/follow/Charlykeleb.svg?style=social)](https://twitter.com/Charlykeleb)
 
 
 
