@@ -22,7 +22,10 @@ class _ExploreState extends State<Explore> {
                 children: [
                   Text(
                     'Trending',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17,
+                    ),
                   ),
                   SizedBox(width: 3),
                   Padding(

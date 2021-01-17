@@ -98,7 +98,7 @@ class _MyProfileState extends State<MyProfile> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Ubuntu-Regular',
-                      fontSize: 10,
+                      fontSize: 13,
                     ),
                   ),
                 )
@@ -113,9 +113,11 @@ class _MyProfileState extends State<MyProfile> {
             title: Text(
               'Email',
               style: TextStyle(
-                  fontSize: 13,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black54),
+                fontSize: 18,
+                fontFamily: 'Ubuntu-Regular',
+                fontWeight: FontWeight.bold,
+                // color: Colors.black54
+              ),
             ),
             subtitle: Text(
               'charlotte@gmail.com',
@@ -126,7 +128,7 @@ class _MyProfileState extends State<MyProfile> {
             ),
             trailing: Icon(
               Feather.mail,
-              color: Colors.black,
+              // color: Colors.black,
               size: 20,
             ),
           ),
@@ -137,9 +139,11 @@ class _MyProfileState extends State<MyProfile> {
             title: Text(
               'Mobile Number',
               style: TextStyle(
-                  fontSize: 13,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black54),
+                fontSize: 18,
+                fontFamily: 'Ubuntu-Regular',
+                fontWeight: FontWeight.bold,
+                // color: Colors.black54
+              ),
             ),
             subtitle: Text(
               '+229 663 962 47',
@@ -150,7 +154,7 @@ class _MyProfileState extends State<MyProfile> {
             ),
             trailing: Icon(
               Feather.phone_call,
-              color: Colors.black,
+              // color: Colors.black,
               size: 20,
             ),
           ),
@@ -161,9 +165,11 @@ class _MyProfileState extends State<MyProfile> {
             title: Text(
               'D.O.B',
               style: TextStyle(
-                  fontSize: 13,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black54),
+                fontSize: 18,
+                fontFamily: 'Ubuntu-Regular',
+                fontWeight: FontWeight.bold,
+                // color: Colors.black54
+              ),
             ),
             subtitle: Text(
               'Oct 20, 1999',
@@ -175,7 +181,7 @@ class _MyProfileState extends State<MyProfile> {
             ),
             trailing: Icon(
               Icons.cake,
-              color: Colors.black,
+              // color: Colors.black,
               size: 20,
             ),
           ),
@@ -186,9 +192,11 @@ class _MyProfileState extends State<MyProfile> {
             title: Text(
               'Gender',
               style: TextStyle(
-                  fontSize: 13,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black54),
+                fontSize: 18,
+                fontFamily: 'Ubuntu-Regular',
+                fontWeight: FontWeight.bold,
+                // color: Colors.black54
+              ),
             ),
             subtitle: Text(
               'Male',
@@ -200,7 +208,7 @@ class _MyProfileState extends State<MyProfile> {
             ),
             trailing: Icon(
               Feather.users,
-              color: Colors.black,
+              // color: Colors.black,
               size: 20,
             ),
           ),
@@ -211,21 +219,23 @@ class _MyProfileState extends State<MyProfile> {
             title: Text(
               'Nationality',
               style: TextStyle(
-                  fontSize: 13,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black54),
+                fontSize: 18,
+                fontFamily: 'Ubuntu-Regular',
+                fontWeight: FontWeight.bold,
+                // color: Colors.black54
+              ),
             ),
             subtitle: Text(
               'German',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Ubuntu-Regular',
-               // color: Colors.black,
+                // color: Colors.black,
               ),
             ),
             trailing: Icon(
               Feather.flag,
-              color: Colors.black,
+              // color: Colors.black,
               size: 20,
             ),
           ),

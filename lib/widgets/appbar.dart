@@ -53,7 +53,7 @@ AppBar header(context) {
                     child: TextField(
                       decoration: InputDecoration.collapsed(
                         hintText: 'Search...',
-                        hintStyle: TextStyle(fontSize: 10, color: Colors.black),
+                        hintStyle: TextStyle(fontSize: 14, color: Colors.black),
                       ),
                     ),
                   ),

@@ -40,14 +40,18 @@ class _PostItemState extends State<PostItem> {
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
                     children: [
-                      Icon(Feather.map_pin, size: 15, color: Colors.white,),
+                      Icon(
+                        Feather.map_pin,
+                        size: 15,
+                        color: Colors.white,
+                      ),
                       SizedBox(width: 5),
                       Text(
                         datar['places'],
-                        style:  TextStyle(
-                          fontSize: 12,
-                          color: Colors.white,
-                          fontFamily: 'Ubuntu-Regular'),
+                        style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontFamily: 'Ubuntu-Regular'),
                       ),
                       Spacer(),
                       Text(
@@ -60,10 +64,11 @@ class _PostItemState extends State<PostItem> {
                       SizedBox(width: 5),
                       Text(
                         'likes',
-                          style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.white,
-                              fontFamily: 'Ubuntu-Regular'),
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                          fontFamily: 'Ubuntu-Regular',
+                        ),
                       ),
                       SizedBox(width: 5),
                       Icon(Feather.heart, size: 15, color: Colors.white),
