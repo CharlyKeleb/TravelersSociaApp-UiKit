@@ -30,6 +30,10 @@ class Constants{
         ),
       ),
     ),
+       bottomAppBarTheme: BottomAppBarTheme(
+       elevation: 0,
+       color:Color(0xfff3f4f9),
+    )
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -49,6 +53,10 @@ class Constants{
         ),
       ),
     ),
+    bottomAppBarTheme: BottomAppBarTheme(
+       elevation: 0,
+       color: darkBG
+    )
   );
 
 

@@ -31,7 +31,7 @@ AppBar header(context) {
           SizedBox(width: 10),
           Container(
             height: 35,
-            width: 120,
+            width: 160,
             decoration: BoxDecoration(
               color: Colors.grey[300],
               borderRadius: BorderRadius.circular(20),
@@ -43,6 +43,7 @@ AppBar header(context) {
                   SizedBox(width: 3),
                   Icon(
                     Feather.search,
+                    color: Colors.black,
                     size: 20,
                   ),
                   SizedBox(
@@ -52,7 +53,7 @@ AppBar header(context) {
                     child: TextField(
                       decoration: InputDecoration.collapsed(
                         hintText: 'Search...',
-                        hintStyle: TextStyle(fontSize: 10),
+                        hintStyle: TextStyle(fontSize: 10, color: Colors.black),
                       ),
                     ),
                   ),

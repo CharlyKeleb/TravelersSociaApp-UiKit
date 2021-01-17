@@ -23,13 +23,11 @@ class _PostItemState extends State<PostItem> {
         itemCount: 3,
         itemBuilder: (BuildContext context, int index) {
           Map datar = data[index];
-
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 5),
             child: Container(
               height: 200,
               decoration: BoxDecoration(
-                // color: Colors.purple,
                 borderRadius: BorderRadius.circular(5),
                 image: DecorationImage(
                   image: AssetImage(datar['story']),

@@ -29,7 +29,6 @@ class _MainScreenState extends State<MainScreen> {
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 0.0,
-        color: Color(0xfff3f4f9),
         child: Padding(
           padding: const EdgeInsets.only(bottom: 10.0, left: 15),
           child: Row(

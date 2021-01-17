@@ -17,6 +17,8 @@ class _NewsFeedState extends State<NewsFeed> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Flexible(
               child: ListView(
@@ -25,7 +27,7 @@ class _NewsFeedState extends State<NewsFeed> {
                 shrinkWrap: true,
                 physics: AlwaysScrollableScrollPhysics(),
                 children: [
-                  SizedBox(height: 30),
+                  SizedBox(height: 10.0),
                   StoryItem(),
                   SavedItem(),
                   PostItem(),

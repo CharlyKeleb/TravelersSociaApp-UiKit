@@ -59,7 +59,7 @@ class _MyProfileState extends State<MyProfile> {
                 ),
                 Positioned(
                   top: //MediaQuery.of(context).size.height / 4.6,
-                  155,
+                      155,
                   right: 10,
                   child: Container(
                     height: 30,
@@ -78,11 +78,11 @@ class _MyProfileState extends State<MyProfile> {
                 ),
                 Positioned(
                   top: //MediaQuery.of(context).size.height / 3.6,
-                  195,
-                
-                  left: MediaQuery.of(context).size.width / 3.3,
+                      195,
+                  left: MediaQuery.of(context).size.width / 3.0,
                   child: Text(
                     'Charlotte',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Ubuntu-Regular',
                       fontWeight: FontWeight.bold,
@@ -91,10 +91,11 @@ class _MyProfileState extends State<MyProfile> {
                 ),
                 Positioned(
                   top: //MediaQuery.of(context).size.height / 3.3,
-                  215,
-                  right: MediaQuery.of(context).size.width / 4,
+                      215,
+                  right: MediaQuery.of(context).size.width / 3,
                   child: Text(
                     'Adventure lover | Traveler | Artist',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Ubuntu-Regular',
                       fontSize: 10,
@@ -119,7 +120,7 @@ class _MyProfileState extends State<MyProfile> {
             subtitle: Text(
               'charlotte@gmail.com',
               style: TextStyle(
-                  color: Colors.black,
+                  // color: Colors.black,
                   fontFamily: 'Ubuntu-Regular',
                   fontWeight: FontWeight.bold),
             ),
@@ -143,7 +144,7 @@ class _MyProfileState extends State<MyProfile> {
             subtitle: Text(
               '+229 663 962 47',
               style: TextStyle(
-                  color: Colors.black,
+                  // color: Colors.black,
                   fontFamily: 'Ubuntu-Regular',
                   fontWeight: FontWeight.bold),
             ),
@@ -168,7 +169,7 @@ class _MyProfileState extends State<MyProfile> {
               'Oct 20, 1999',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                // color: Colors.black,
                 fontFamily: 'Ubuntu-Regular',
               ),
             ),
@@ -192,9 +193,10 @@ class _MyProfileState extends State<MyProfile> {
             subtitle: Text(
               'Male',
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black),
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Ubuntu-Regular',
+                // color: Colors.black,
+              ),
             ),
             trailing: Icon(
               Feather.users,
@@ -216,9 +218,10 @@ class _MyProfileState extends State<MyProfile> {
             subtitle: Text(
               'German',
               style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Ubuntu-Regular',
-                  color: Colors.black),
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Ubuntu-Regular',
+               // color: Colors.black,
+              ),
             ),
             trailing: Icon(
               Feather.flag,
