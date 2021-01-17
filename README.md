@@ -1,4 +1,4 @@
-# 🔥🔥 Flutter Traveler's Social App  [![Twitter Follow](https://img.shields.io/twitter/follow/Charlykeleb.svg?style=social)](https://twitter.com/iamjideguru)
+# 🔥🔥 Flutter Traveler's Social App  [![Twitter Follow](https://img.shields.io/twitter/follow/CharlyKeleb.svg?style=social)](https://twitter.com/CharlyKeleb)
 Flutter representation of the Traveler's Social App  found on dribbble.
 
 Star⭐ the repo if you like what you see😉.
@@ -6,6 +6,7 @@ Star⭐ the repo if you like what you see😉.
 
 Images are from [dribbble](https://dribbble.com/shots/11674733-Travellore-App-UI-UX-Modern-Minimal)
 
+-- Let's make 500Stars⭐ on this repo, i will add a firebase backend
 
 ## ✨ Requirements
 * Any Operating System (ie. MacOS X, Linux, Windows)
@@ -13,6 +14,10 @@ Images are from [dribbble](https://dribbble.com/shots/11674733-Travellore-App-UI
 * A little knowledge of Dart and Flutter
 * A brain to think 🤓🤓
 
+## 🌗 Toggle theme
+To toggle the theme, change the `theme` variable in `main.dart`.
+
+`Constants.darkTheme` for dark and `Constants.lightTheme` for light.
 
 ## 📸 ScreenShots
 
