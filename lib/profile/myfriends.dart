@@ -25,22 +25,22 @@ class _MyFriendsState extends State<MyFriends> {
             title: Text(
               datar['name'],
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 12,
-                  fontFamily: 'Ubuntu-Regular',
-                  fontWeight: FontWeight.bold),
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Ubuntu-Regular',
+                // color: Colors.black,
+              ),
             ),
             subtitle: Text(
               'online',
               style: TextStyle(
-                  color: Colors.grey[300],
-                  fontSize: 10,
+                  // color: Colors.grey[000],
+                  fontSize: 13,
                   fontFamily: 'Ubuntu-Regular',
                   fontWeight: FontWeight.bold),
             ),
             trailing: Icon(
               Feather.user_check,
-              color: Colors.black,
+              // color: Colors.black,
               size: 20,
             ),
           ),

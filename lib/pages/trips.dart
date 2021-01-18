@@ -87,6 +87,7 @@ class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
                               style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Ubuntu-Regular',
+                                color: Colors.black,
                               ),
                             ),
                           ),
@@ -104,6 +105,7 @@ class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
                               style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Ubuntu-Regular',
+                                color: Colors.black,
                               ),
                             ),
                           ),

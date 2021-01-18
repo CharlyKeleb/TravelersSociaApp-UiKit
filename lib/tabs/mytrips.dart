@@ -154,6 +154,7 @@ class _MyTripsState extends State<MyTrips> {
                         style: TextStyle(
                           fontSize: 10,
                           fontFamily: 'Ubuntu-Regular',
+                          color: Colors.black,
                         ),
                       ),
                     ),
@@ -171,6 +172,7 @@ class _MyTripsState extends State<MyTrips> {
                         style: TextStyle(
                           fontSize: 10,
                           fontFamily: 'Ubuntu-Regular',
+                          color: Colors.black,
                         ),
                       ),
                     ),
