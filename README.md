@@ -23,9 +23,11 @@ To toggle the theme, change the `theme` variable in `main.dart`.
 
 <img src="ss/00.png" width="300"/><img src="ss/1.png" width="300"/>
 
-<img src="ss/01.jpg" width="400"> <img src="ss/02.jpg" width="400">
-<img src="ss/03.jpg" width="400"> <img src="ss/04.jpg" width="400">
-<img src="ss/05.jpg" width="400">
+<img src="ss/01.png" width="400"> <img src="ss/02.png" width="400">
+<img src="ss/03.png" width="400"> <img src="ss/04.png" width="400">
+<img src="ss/05.png" width="400"> <img src="ss/06.png" width="400">
+<img src="ss/07.png" width="400"> <img src="ss/08.png" width="400">
+
 
 
 
