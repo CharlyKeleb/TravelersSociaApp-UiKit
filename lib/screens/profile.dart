@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:travel_social_app/profile/activities.dart';
 import 'package:travel_social_app/profile/myfriends.dart';
 import 'package:travel_social_app/profile/myprofile.dart';
@@ -11,7 +12,7 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  PageController _pageController;
+  PageController? _pageController;
   int _page = 0;
   int selectedItem = 0;
   @override
@@ -47,7 +48,7 @@ class _ProfileState extends State<Profile> {
                   ),
                   child: Center(
                     child: Icon(
-                      Feather.user,
+                      Iconsax.user,
                       color: 0 == selectedItem ? Colors.white : Colors.black,
                       size: 15,
                     ),
@@ -71,7 +72,7 @@ class _ProfileState extends State<Profile> {
                   ),
                   child: Center(
                     child: Icon(
-                      Feather.users,
+                      Icons.person_2,
                       color: 1 == selectedItem ? Colors.white : Colors.black,
                       size: 15,
                     ),
@@ -94,7 +95,7 @@ class _ProfileState extends State<Profile> {
                   ),
                   child: Center(
                     child: Icon(
-                      Feather.archive,
+                      Ionicons.archive_outline,
                       color: 2 == selectedItem ? Colors.white : Colors.black,
                       size: 15,
                     ),
@@ -119,7 +120,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     child: Center(
                       child: Icon(
-                        Feather.clock,
+                        Iconsax.clock,
                         color: 3 == selectedItem ? Colors.white : Colors.black,
                         size: 15,
                       ),
@@ -151,7 +152,7 @@ class _ProfileState extends State<Profile> {
   }
 
   void navigationTapped(int page) {
-    _pageController.jumpToPage(page);
+    _pageController!.jumpToPage(page);
   }
 
   @override
@@ -169,7 +170,7 @@ class _ProfileState extends State<Profile> {
   @override
   void dispose() {
     super.dispose();
-    _pageController.dispose();
+    _pageController!.dispose();
   }
 
   selectItem(page) {

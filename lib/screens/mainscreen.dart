@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:travel_social_app/pages/explore.dart';
 import 'package:travel_social_app/pages/newsfeed.dart';
 import 'package:travel_social_app/pages/trips.dart';
@@ -10,7 +11,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  PageController _pageController;
+  PageController? _pageController;
   int _page = 0;
   int selectedItem = 0;
 
@@ -49,9 +50,9 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                   child: Center(
                     child: Icon(
-                      Feather.home,
+                      Iconsax.home,
                       color: 0 == selectedItem ? Colors.white : Colors.black,
-                      size: 15,
+                      size: 20,
                     ),
                   ),
                 ),
@@ -74,9 +75,9 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                   child: Center(
                     child: Icon(
-                      Feather.compass,
+                      Ionicons.compass_outline,
                       color: 1 == selectedItem ? Colors.white : Colors.black,
-                      size: 15,
+                      size: 20,
                     ),
                   ),
                 ),
@@ -98,9 +99,9 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                   child: Center(
                     child: Icon(
-                      Feather.clipboard,
+                      Iconsax.menu_board,
                       color: 2 == selectedItem ? Colors.white : Colors.black,
-                      size: 15,
+                      size: 20,
                     ),
                   ),
                 ),
@@ -119,7 +120,7 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                     child: Center(
                       child: Icon(
-                        Feather.plus,
+                        Ionicons.add,
                         color: Colors.white,
                         size: 15,
                       ),
@@ -135,7 +136,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   void navigationTapped(int page) {
-    _pageController.jumpToPage(page);
+    _pageController!.jumpToPage(page);
   }
 
   @override
@@ -153,7 +154,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void dispose() {
     super.dispose();
-    _pageController.dispose();
+    _pageController!.dispose();
   }
 
   selectItem(page) {

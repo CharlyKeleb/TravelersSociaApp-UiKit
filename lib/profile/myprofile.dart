@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 
 class MyProfile extends StatefulWidget {
   @override
@@ -23,14 +24,16 @@ class _MyProfileState extends State<MyProfile> {
                   height: 150,
                   width: MediaQuery.of(context).size.width - 40,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/saved/saved1.jpg'),
-                          fit: BoxFit.cover)),
+                    borderRadius: BorderRadius.circular(5),
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/saved/saved1.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 Positioned(
                   top: 120,
-                  left: MediaQuery.of(context).size.width / 3.3,
+                  left: MediaQuery.of(context).size.width / 2.8,
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -70,7 +73,7 @@ class _MyProfileState extends State<MyProfile> {
                     ),
                     child: Center(
                       child: Icon(
-                        Feather.edit_2,
+                        Iconsax.edit,
                         size: 15,
                       ),
                     ),
@@ -79,7 +82,7 @@ class _MyProfileState extends State<MyProfile> {
                 Positioned(
                   top: //MediaQuery.of(context).size.height / 3.6,
                       195,
-                  left: MediaQuery.of(context).size.width / 3.0,
+                  left: MediaQuery.of(context).size.width / 2.7,
                   child: Text(
                     'Charlotte',
                     textAlign: TextAlign.center,
@@ -92,7 +95,7 @@ class _MyProfileState extends State<MyProfile> {
                 Positioned(
                   top: //MediaQuery.of(context).size.height / 3.3,
                       215,
-                  right: MediaQuery.of(context).size.width / 3,
+                  left: MediaQuery.of(context).size.width / 5,
                   child: Text(
                     'Adventure lover | Traveler | Artist',
                     textAlign: TextAlign.center,
@@ -127,7 +130,7 @@ class _MyProfileState extends State<MyProfile> {
                   fontWeight: FontWeight.bold),
             ),
             trailing: Icon(
-              Feather.mail,
+              Ionicons.mail_outline,
               // color: Colors.black,
               size: 20,
             ),
@@ -153,7 +156,7 @@ class _MyProfileState extends State<MyProfile> {
                   fontWeight: FontWeight.bold),
             ),
             trailing: Icon(
-              Feather.phone_call,
+              Ionicons.call_outline,
               // color: Colors.black,
               size: 20,
             ),
@@ -207,7 +210,7 @@ class _MyProfileState extends State<MyProfile> {
               ),
             ),
             trailing: Icon(
-              Feather.users,
+              Iconsax.user,
               // color: Colors.black,
               size: 20,
             ),
@@ -234,7 +237,7 @@ class _MyProfileState extends State<MyProfile> {
               ),
             ),
             trailing: Icon(
-              Feather.flag,
+              Iconsax.flag,
               // color: Colors.black,
               size: 20,
             ),

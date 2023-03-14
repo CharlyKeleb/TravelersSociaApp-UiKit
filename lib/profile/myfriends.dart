@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:travel_social_app/utils/data.dart';
 
 class MyFriends extends StatefulWidget {
@@ -33,13 +34,14 @@ class _MyFriendsState extends State<MyFriends> {
             subtitle: Text(
               'online',
               style: TextStyle(
-                  // color: Colors.grey[000],
-                  fontSize: 13,
-                  fontFamily: 'Ubuntu-Regular',
-                  fontWeight: FontWeight.bold),
+                // color: Colors.grey[000],
+                fontSize: 13,
+                fontFamily: 'Ubuntu-Regular',
+                fontWeight: FontWeight.bold,
+              ),
             ),
             trailing: Icon(
-              Feather.user_check,
+              Iconsax.user_tick,
               // color: Colors.black,
               size: 20,
             ),

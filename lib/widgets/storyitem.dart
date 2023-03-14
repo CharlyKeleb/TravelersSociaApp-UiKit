@@ -10,7 +10,7 @@ class _StoryItemState extends State<StoryItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 130,
+      height: 220,
       child: ListView.builder(
         itemCount: 5,
         scrollDirection: Axis.horizontal,
@@ -21,8 +21,8 @@ class _StoryItemState extends State<StoryItem> {
             child: Stack(
               children: [
                 Container(
-                  height: 100,
-                  width: 80,
+                  height: 180.0,
+                  width: 120.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     image: DecorationImage(
@@ -32,8 +32,8 @@ class _StoryItemState extends State<StoryItem> {
                   ),
                 ),
                 Positioned(
-                  top: 80,
-                  right: 25,
+                  top: 150.0,
+                  right: 42.0,
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -53,7 +53,7 @@ class _StoryItemState extends State<StoryItem> {
                     child: Padding(
                       padding: const EdgeInsets.all(1.0),
                       child: CircleAvatar(
-                        radius: 15,
+                        radius: 20,
                         backgroundImage: AssetImage(story['dp']),
                       ),
                     ),

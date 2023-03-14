@@ -1,7 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:travel_social_app/utils/data.dart';
 
 class MyTrips extends StatefulWidget {
@@ -31,6 +32,7 @@ class _MyTripsState extends State<MyTrips> {
                   image: DecorationImage(
                     image: AssetImage(datar['saved']),
                     fit: BoxFit.cover,
+                    filterQuality: FilterQuality.high
                   ),
                 ),
                 child: Column(
@@ -42,7 +44,7 @@ class _MyTripsState extends State<MyTrips> {
                         child: Row(
                           children: [
                             Icon(
-                              Feather.map_pin,
+                              Iconsax.location,
                               size: 15,
                               color: Colors.white,
                             ),
@@ -75,9 +77,9 @@ class _MyTripsState extends State<MyTrips> {
                             ),
                             SizedBox(width: 5),
                             Icon(
-                              Feather.heart,
+                              Ionicons.heart,
                               size: 15,
-                              color: Colors.white,
+                              color: Colors.red,
                             ),
                             SizedBox(width: 5),
                             Icon(
@@ -152,7 +154,7 @@ class _MyTripsState extends State<MyTrips> {
                       child: Text(
                         'Nature',
                         style: TextStyle(
-                          fontSize: 10,
+                          fontSize: 12,
                           fontFamily: 'Ubuntu-Regular',
                           color: Colors.black,
                         ),
@@ -170,7 +172,7 @@ class _MyTripsState extends State<MyTrips> {
                       child: Text(
                         'Resort',
                         style: TextStyle(
-                          fontSize: 10,
+                          fontSize: 12,
                           fontFamily: 'Ubuntu-Regular',
                           color: Colors.black,
                         ),
@@ -188,7 +190,7 @@ class _MyTripsState extends State<MyTrips> {
                       child: Text(
                         'Adventure',
                         style: TextStyle(
-                          fontSize: 10,
+                          fontSize: 12,
                           fontFamily: 'Ubuntu-Regular',
                           color: Colors.white,
                         ),
@@ -217,10 +219,30 @@ class _MyTripsState extends State<MyTrips> {
                   itemBuilder: (BuildContext context, int index) {
                     Map datar = data[index];
                     return Padding(
-                      padding: const EdgeInsets.only(right: 5.0),
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundImage: AssetImage(datar['story']),
+                      padding: const EdgeInsets.only(right: 0.0),
+                      child:  Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              offset: new Offset(0.0, 0.0),
+                              blurRadius: 2.0,
+                              spreadRadius: 0.0,
+                            ),
+                          ],
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(1.0),
+                          child: CircleAvatar(
+                            radius: 20,
+                            backgroundImage: AssetImage(datar['story']),
+                          ),
+                        ),
                       ),
                     );
                   },

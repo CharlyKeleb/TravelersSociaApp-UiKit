@@ -1,7 +1,8 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:travel_social_app/utils/data.dart';
 
 class SavedItem extends StatefulWidget {
@@ -16,7 +17,7 @@ class _SavedItemState extends State<SavedItem> {
     double currentPosition = 0.0;
 
     return Container(
-      height: 200,
+      height: 200.0,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,21 +26,26 @@ class _SavedItemState extends State<SavedItem> {
             child: ListView.builder(
               itemCount: 3,
               scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.zero,
               itemBuilder: (BuildContext context, int index) {
                 Map datar = data[index];
                 return Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(5.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         width: 250,
+                        height: 150.0,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
-                              image: AssetImage(datar['saved']),
-                              fit: BoxFit.cover),
+                            opacity: 2,
+                            filterQuality: FilterQuality.high,
+                            image: AssetImage(datar['saved']),
+                            fit: BoxFit.cover,
+                          ),
                         ),
                         child: Column(
                           children: [
@@ -50,16 +56,16 @@ class _SavedItemState extends State<SavedItem> {
                                 Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Container(
-                                    height: 30,
-                                    width: 30,
+                                    height: 30.0,
+                                    width: 30.0,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Colors.white,
                                     ),
                                     child: Center(
                                       child: Icon(
-                                        Feather.bookmark,
-                                        size: 15,
+                                        Ionicons.bookmark_outline,
+                                        size: 15.0,
                                         color: Colors.black,
                                       ),
                                     ),
@@ -82,7 +88,7 @@ class _SavedItemState extends State<SavedItem> {
                                       datar['city'],
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 12,
+                                        fontSize: 14,
                                         fontFamily: 'Ubuntu-Regular',
                                       ),
                                     ),
@@ -92,13 +98,15 @@ class _SavedItemState extends State<SavedItem> {
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white,
+                                        fontSize: 12,
                                         fontFamily: 'Ubuntu-Regular',
                                       ),
                                     ),
+                                    const SizedBox(height: 10.0),
                                     Row(
                                       children: [
                                         Icon(
-                                          Feather.map_pin,
+                                          Iconsax.location,
                                           size: 15,
                                           color: Colors.white,
                                         ),
@@ -133,9 +141,10 @@ class _SavedItemState extends State<SavedItem> {
               dotsCount: totalDots,
               position: currentPosition,
               decorator: DotsDecorator(
-                size: Size.square(5.0),
+                activeColor: Colors.red,
+                size: Size.square(10.0),
                 spacing: EdgeInsets.only(left: 5),
-                activeSize: Size(20.0, 5.0),
+                activeSize: Size(20.0, 10.0),
                 activeShape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
                 ),

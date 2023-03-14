@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:travel_social_app/widgets/appbar.dart';
 import 'package:travel_social_app/widgets/exploregrids.dart';
 
@@ -31,7 +33,7 @@ class _ExploreState extends State<Explore> {
                   Padding(
                     padding: const EdgeInsets.only(top: 5.0),
                     child: Icon(
-                      Icons.arrow_drop_down,
+                      Ionicons.chevron_down,
                       size: 15,
                     ),
                   )

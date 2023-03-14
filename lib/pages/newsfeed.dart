@@ -29,7 +29,22 @@ class _NewsFeedState extends State<NewsFeed> {
                 children: [
                   SizedBox(height: 10.0),
                   StoryItem(),
+                  Text(
+                    'Popular Locations',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 10.0),
                   SavedItem(),
+                  Text(
+                    'Feeds',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   PostItem(),
                 ],
               ),

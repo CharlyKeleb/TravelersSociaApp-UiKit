@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:travel_social_app/utils/data.dart';
 
 class PostItem extends StatefulWidget {
@@ -14,8 +14,8 @@ class _PostItemState extends State<PostItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
+      // height: MediaQuery.of(context).size.height,
+      // width: MediaQuery.of(context).size.width,
       child: ListView.builder(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
@@ -26,7 +26,7 @@ class _PostItemState extends State<PostItem> {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 5),
             child: Container(
-              height: 200,
+              height: 250,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
                 image: DecorationImage(
@@ -41,7 +41,7 @@ class _PostItemState extends State<PostItem> {
                   child: Row(
                     children: [
                       Icon(
-                        Feather.map_pin,
+                        Iconsax.location,
                         size: 15,
                         color: Colors.white,
                       ),
@@ -71,7 +71,7 @@ class _PostItemState extends State<PostItem> {
                         ),
                       ),
                       SizedBox(width: 5),
-                      Icon(Feather.heart, size: 15, color: Colors.white),
+                      Icon(Iconsax.heart, size: 15, color: Colors.white),
                       SizedBox(width: 5),
                       Icon(Icons.share, size: 15, color: Colors.white)
                     ],

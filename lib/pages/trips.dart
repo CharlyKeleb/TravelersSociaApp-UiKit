@@ -12,7 +12,7 @@ class Trips extends StatefulWidget {
 }
 
 class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
-  TabController _tabController;
+  TabController? _tabController;
   @override
   void initState() {
     super.initState();
@@ -61,7 +61,7 @@ class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
                         ),
                         Tab(
                           child: Text(
-                            'Whishlist',
+                            'Wishlist',
                             style: TextStyle(
                                 fontSize: 12, fontFamily: 'Ubuntu-Regular'),
                           ),
@@ -83,7 +83,7 @@ class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
                           ),
                           child: Center(
                             child: Text(
-                              'ON-GOING',
+                              'On-Going',
                               style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Ubuntu-Regular',
@@ -101,7 +101,7 @@ class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
                           ),
                           child: Center(
                             child: Text(
-                              'UP-COMING',
+                              'Up-Coming',
                               style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Ubuntu-Regular',
@@ -119,7 +119,7 @@ class _TripsState extends State<Trips> with SingleTickerProviderStateMixin {
                           ),
                           child: Center(
                             child: Text(
-                              'COMPLETED',
+                              'Completed',
                               style: TextStyle(
                                 fontSize: 12,
                                 fontFamily: 'Ubuntu-Regular',

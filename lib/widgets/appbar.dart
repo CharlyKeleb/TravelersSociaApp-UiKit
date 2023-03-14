@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:travel_social_app/screens/profile.dart';
 
 AppBar header(context) {
@@ -29,35 +29,37 @@ AppBar header(context) {
             ),
           ),
           SizedBox(width: 10),
-          Container(
-            height: 35,
-            width: 160,
-            decoration: BoxDecoration(
-              color: Colors.grey[300],
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Row(
-                children: [
-                  SizedBox(width: 3),
-                  Icon(
-                    Feather.search,
-                    color: Colors.black,
-                    size: 20,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Flexible(
-                    child: TextField(
-                      decoration: InputDecoration.collapsed(
-                        hintText: 'Search...',
-                        hintStyle: TextStyle(fontSize: 14, color: Colors.black),
+          Flexible(
+            child: Container(
+              height: 35.0,
+              // width: 200.0,
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                child: Row(
+                  children: [
+                    SizedBox(width: 3),
+                    Icon(
+                      Iconsax.search_normal,
+                      color: Colors.black,
+                      size: 20,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Flexible(
+                      child: TextField(
+                        decoration: InputDecoration.collapsed(
+                          hintText: 'Search...',
+                          hintStyle: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -72,7 +74,7 @@ AppBar header(context) {
           child: Stack(
             children: <Widget>[
               Icon(
-                CupertinoIcons.bell,
+                Iconsax.notification,
                 size: 30,
                 //  color: Colors.black,
               ),
