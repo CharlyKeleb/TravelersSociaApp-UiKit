@@ -75,6 +75,7 @@ class _MyProfileState extends State<MyProfile> {
                       child: Icon(
                         Iconsax.edit,
                         size: 15,
+                        color: Colors.black,
                       ),
                     ),
                   ),
